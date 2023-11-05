@@ -1,0 +1,45 @@
+<svg fill="none" width="400" height="120" viewBox="0 0 400 120" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="overflowGradient" x1="0" x2="0" y1="0" y2="1">
+      <stop offset="0%" stop-color="white" stop-opacity="0.5" />
+      <stop offset="40%" stop-color="white" stop-opacity="0.4" />
+      <stop offset="100%" stop-color="white" stop-opacity="0.0" />
+    </linearGradient>
+    <mask id="overflow" maskContentUnits="objectBoundingBox">
+      <rect width="1" height="1" fill="url(#overflowGradient)" />
+    </mask>
+  </defs>
+  <!-- TODO try to replace with <text> -->
+  <foreignObject width="100%" height="100%" mask="url(#overflow)">
+    <html:span xmlns:html="http://www.w3.org/1999/xhtml">
+      <html:style>
+        * {
+          color: white;
+          font-family: sans-serif;
+          font-size: 13px;
+          line-height: 1.2em;
+          margin: 0;
+          white-space: nowrap;
+        }
+        @media (prefers-color-scheme: light) {
+          * {
+            color: black;
+          }
+        }
+      </html:style>
+      <!--
+        &#8211; - &ndash;
+        &#8230; - &hellip;
+      -->
+      <html:ul>
+        <html:li>ex-Sberbank of Russia PJSC (2022&#8211;2023)</html:li>
+        <html:li>ex-Samsung Electronics (2022)</html:li>
+        <html:li>ex-Masterdata / Customertimes (2019&#8211;2021)</html:li>
+        <html:li>ex-<html:strong>Parallels / Odin / Virtuozzo</html:strong> (2015&#8211;2019)</html:li>
+        <html:li>&#8230;</html:li>
+        <html:li>ex-НИИСИ РАН / SRISA RAS (2011&#8211;2012)</html:li>
+        <html:li>ex-NetCracker Technology Corp. (2009&#8211;2011)</html:li>
+      </html:ul>
+    </html:span>
+  </foreignObject>
+</svg>
